@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    background: var(--color-dark-blue);
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden; /* hides the scroll bar space, overflow is hidden*/
+}
+
+:root {
+    --color-dark-blue: rgb(8, 8, 42);
+    --color-blue: rgb(27, 27, 70);
+    --color-dark: rgb(31, 31, 55);
+    --color-grey: rgb(192, 192, 192);
+}
+
+/* HEADER SECTION */
+.header {
+    background-color: var(--color-dark-blue);
+    width: 100vw;
+    height: 6rem;
+    padding-top: 3vh;
+    display: block;
+}
+
+.header img{
+    display: inline-block;
+    height: 5rem;
+    width: 5rem;
+    margin-left: 8%;
+}
+.navbar {
+    display: inline-block;
+    list-style: none;
+    position: absolute;
+    top: 2rem;
+    left: 17%;
+}
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    transition: 1s ease-in-out;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+}
+
+.searchbox {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    right: 20rem;
+    width: 12rem;
+}
+
+#search {
+    font-family: 'Ubuntu', sans-serif;
+    height: 2rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: var(--color-blue);
+    color: white;
+    width: 100%;
+    padding-left: 25px;
+}
+
+#searchicon {
+    position: relative;
+    top: 1.8rem;
+    left: 0.3rem;
+}
+
+#notif {
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    right: 12rem;
+    top: 3rem;
+}
+
+#profile {
+    height: 3.5rem;
+    width: 3.5rem;
+    position: absolute;
+    top: 1.7rem;
+    right: 5rem;
+    border-radius: 50%;
+}
+
+/* Background Body section */
+.bgbody {
+    width: 90vw;
+    height: auto;
+    position: relative;
+    padding-left: 8vw;
+}
+
+/* main music section */
+.main {
+    height: auto;
+    width: 60vw;
+    display: inline-block;
+    min-width: 800px;
+    margin-bottom: 8rem;
+}
+
+.singerbox {
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    background-color: var(--color-blue);
+}
+
+#singerimg {
+    display: inline-block;
+    height: 36%;
+    width: 36%;
+}
+
+.singerdetails {
+    display: inline-block;
+    color: rgb(206, 206, 206);
+    position: relative;
+    left: 2%;
+    top: -3rem;
+    font-size: small;
+}
+
+.singerdetails h1 {
+    color: white;
+    display: inline-block;
+    font-size: xx-large;
+}
+
+.followers {
+    display: inline-block;
+    margin-left: 20%;
+}
+
+#singerbtn {
+    border: none;
+    font-size: medium;
+    font-family: 'Ubuntu', sans-serif;
+    height: 2.5rem;
+    width: 8rem;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+#singerbtn:hover {
+    cursor: pointer;
+}
+
+.gradcolor {
+    background: linear-gradient(to right, rgb(71, 14, 169), rgb(220, 62, 225));
+}
+
+.transparent {
+    background: transparent;
+    margin-left: 2rem;
+}
+
+/* MUSIC ITEM */
+.containmusicitem {
+    margin-top: 1rem;
+}
+
+.musicitem {
+    margin-top: 0.5rem;
+    height: 60px;
+    width: 100%;
+    color: white;
+    background-color: var(--color-dark);
+    position: relative;
+    contain: content;
+}
+.musicitem a{
+    color: white;
+    text-decoration: none;
+}
+.musicitem .fa-music {
+    position: absolute;
+    top: 23px;
+    left: 1rem;
+}
+
+.light-grey {
+    background-color: rgb(56, 50, 96);
+}
+
+.musicitem img {
+    height: auto;
+    width: 5%;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 3rem;
+}
+
+.musicitem h4 {
+    display: inline-block;
+    font-size: 15px;
+    position: absolute;
+    top: -10px;
+    left: 7rem;
+}
+
+.musicitem .musicnum {
+    position: absolute;
+    top: 23px;
+    left: 1rem;
+}
+
+.musicitem .musicalbum {
+    font-size: small;
+    color: var(--color-grey);
+    position: absolute;
+    top: 30px;
+    left: 7rem;
+}
+
+.musicitem .musictime {
+    position: absolute;
+    right: 8em;
+    top: 23px;
+}
+
+.musicitem .fa-heart {
+    position: absolute;
+    right: 4rem;
+    top: 23px;
+}
+
+.musicitem .fa-ellipsis-vertical {
+    position: absolute;
+    right: 2rem;
+    top: 23px;
+}
+
+
+
+/* ASIDE SECTION */
+
+
+.aside {
+    display: inline-block;
+    margin-left: 1rem;
+    height: auto;
+    width: 20vw;
+    min-width: 300px;
+    position: absolute;
+    top: 0px;
+}
+
+.asidesection {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.asidesection h2 {
+    display: inline-block;
+    color: white;
+}
+
+.asidesection a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color-grey);
+    position: absolute;
+    right: 1rem;
+    top: 1.5rem;
+}
+
+/* Album item */
+.asideitem {
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.asideitem img {
+    height: 30%;
+    width: 30%;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.borderradius {
+    border-radius: 50%;
+}
+
+.asideitem h4 {
+    display: inline-block;
+    position: absolute;
+    top: -0.5rem;
+    font-size: large;
+    left: 7rem;
+    color: white;
+}
+
+.asideitem text {
+    display: inline-block;
+    position: absolute;
+    top: 2.5rem;
+    left: 7rem;
+    color: var(--color-grey);
+
+}
+
+.asideitem i {
+    display: inline-block;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    color: var(--color-grey);
+}
+
+/* RESPONSIVE FOR SCREENs smaller than 900px */
+@media screen and (max-width:900px) {
+    .aside {
+        display: none;
+    }
+
+    .bgbody {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .searchbox {
+        display: none;
+    }
+
+    #notif {
+        display: none;
+    }
+
+    #profile {
+        right: 2rem;
+    }
+    .header img{
+        margin-left: 20px;
+    }
+    .navbar {
+        left: 8rem;
+    }
+}
+
+
+
+/* MUSIC PLAYER */
+
+.player {
+    height: 6rem;
+    width: 100vw;
+    background-color: rgb(11, 11, 36);
+    position: fixed;
+    bottom: 0px;
+}
+
+.player img {
+    height: 4rem;
+    width: 4rem;
+    display: inline-block;
+    position: absolute;
+    top: 0.9rem;
+    left: 8rem;
+}
+
+.player h4 {
+    display: inline-block;
+    color: white;
+    position: absolute;
+    top: 0px;
+    left: 14rem;
+}
+
+.player text {
+    color: var(--color-grey);
+    position: absolute;
+    bottom: 1.5rem;
+    left: 14rem;
+}
+
+.player .fa-heart {
+    color: white;
+    display: inline-block;
+    position: absolute;
+    top: 2.5rem;
+    left: 26rem;
+}
+
+.play {
+    height: 100%;
+    width: 40%;
+    display: inline-block;
+    position: relative;
+    left: 30%;
+    top: 1rem;
+    background-color: var(--color-dark-blue);
+    min-width: 500px;
+}
+
+.play i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.play .scroll {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.play .playbox {
+    display: flex;
+    direction: row;
+    width: 100%;
+    justify-content: space-around;
+
+}
+
+.box{
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+}
+.side{
+    display: inline-block;
+    position: absolute;
+    right: 8%;
+    top: 2rem;
+    
+}
+.side i{
+    font-size: 1rem;
+    color: white;
+}
+.side form{
+    display: inline-block;
+}
+
+
+
+/* RESPONSIVE FOR THE PLAYER */
+@media screen and (max-width:1100px)
+{
+    .player h4, .player text, .player .fa-heart {
+        display: none;
+    }
+    .side{
+        right: 2rem;
+    }
+    .player img{
+        left: 2rem;
+    }
+    .play {
+        left: 10rem;
+    }
+}
+@media screen and (max-width:900px){
+    .side form{
+        display: none;
+    }
+    .side{
+        right: 4%;
+    }
+    .player img{
+        left: 1rem;
+    }
+}
+@media screen and (max-width:700px){
+    .play{
+        left: 6rem;
+        min-width: 50px;
+        width: 70%;
+    }
+}
